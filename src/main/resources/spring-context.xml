@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+
+    <bean class="com.puzzle.spring.component.LogPerformanceBeanPostProcessor"/>
+
+
+    <bean class="com.puzzle.spring.component.LogConfigBeanFactoryPostProcessor"/>
+
+
+    <bean id="arithmeticServiceBean" class="com.puzzle.spring.service.impl.ArithmeticServiceImpl"/>
+
+
+    <bean id="extraFastArithmeticServiceBean" class="com.puzzle.spring.service.impl.ExtraFastArithmeticService">
+
+    </bean>
+
+</beans>
